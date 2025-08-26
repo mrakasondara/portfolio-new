@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+  --color-secondary: #f6f1e9;
+  --color-primary: #0f0e0e;
+  --color-alternate: #4300ff;
+  --font-suse: "SUSE", sans-serif;
+  --font-nsw: "Edu NSW ACT Cursive", cursive;
+}
+
+.icon-drawer {
+  font-size: 1.7rem !important;
+}
