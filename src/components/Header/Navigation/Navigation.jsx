@@ -1,8 +1,8 @@
 const Navigation = () => {
   return (
-    <nav className="hidden md:flex m-auto text-secondary font-suse text-lg gap-3">
-      <a href="" className="hover:text-alternate transition ease-in">
-        Projects
+    <nav className="hidden md:flex m-auto text-secondary font-asimovian text-lg gap-3">
+      <a href="#Portfolio" className="hover:text-alternate transition ease-in">
+        Portfolio
       </a>
       <a href="" className="hover:text-alternate transition ease-in">
         Experiences

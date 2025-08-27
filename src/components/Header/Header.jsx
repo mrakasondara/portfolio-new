@@ -12,7 +12,7 @@ const Header = () => {
       initial={{ y: 50, opacity: 0.1 }}
       animate={{ y: 0, opacity: 1 }}
       transition={transition}
-      className="p-5 flex items-center bg-primary justify-between font-semibold sticky top-0"
+      className="p-5 flex items-center bg-primary justify-between font-semibold sticky top-0 z-[10]"
     >
       <h1 className="text-xl text-secondary font-nsw">mrakasondara</h1>
       <Navigation />

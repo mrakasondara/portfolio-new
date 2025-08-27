@@ -1,9 +1,9 @@
-import Portfolio from "./components/Portfolio";
+import PortfolioApp from "./components/PortfolioApp";
 import UserContextProvider from "./UserContext";
 function App() {
   return (
     <UserContextProvider>
-      <Portfolio />
+      <PortfolioApp />
     </UserContextProvider>
   );
 }
