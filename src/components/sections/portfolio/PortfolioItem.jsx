@@ -1,20 +1,52 @@
-const PortfolioItem = ({ image, title, category }) => {
+import { motion } from "motion/react";
+import { Link } from "react-router-dom";
+const PortfolioItem = ({ image, title, desc, url }) => {
+  const animation = {
+    offScreen: {
+      y: -50,
+      opacity: 0,
+    },
+    onscreen: {
+      y: 1,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        bounce: 0.4,
+        duration: 0.8,
+      },
+    },
+  };
+
   return (
-    <figure className="w-full lg:w-1/2 rounded-lg">
-      <a href="">
-        <img
-          src={image}
-          alt="Tenda UMKMM"
-          className="rounded-lg w-full bg-secondary hover:opacity-[0.7] hover:cursor-pointer object-center h-[400px] md:h-[400px] lg:h-[350px]"
-        />
-      </a>
-      <figcaption className="font-suse text-xl text-secondary font-bold my-2">
-        {title}
-      </figcaption>
-      <p className="text-alternate -mt-3 font-semibold opacity-75">
-        {category}
-      </p>
-    </figure>
+    <motion.div
+      initial={animation.offScreen}
+      whileInView={animation.onscreen}
+      className="card bg-sub w-full shadow-sm text-main font-suse"
+    >
+      <figure>
+        <img src={image} alt={title} />
+      </figure>
+      <div className="card-body">
+        <h2 className="card-title ">{title}</h2>
+        <p>{desc}</p>
+        <div className="card-actions justify-end items-center">
+          <Link
+            to={url}
+            target="_blank"
+            className="badge flex items-center text-sub p-2 bg-main hover:bg-sub rounded-md hover:cursor-pointer transition ease-in hover:text-main hover:border"
+          >
+            Repository
+          </Link>
+          <Link
+            to={url}
+            target="_blank"
+            className="badge flex items-center text-sub p-2 bg-alternate hover:bg-sub border-alternate rounded-md hover:cursor-pointer transition ease-in hover:text-alternate hover:border"
+          >
+            Open Page <span className="material-icons">arrow_outward</span>
+          </Link>
+        </div>
+      </div>
+    </motion.div>
   );
 };
 

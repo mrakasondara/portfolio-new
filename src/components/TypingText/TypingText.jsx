@@ -7,7 +7,7 @@ const TypingText = () => {
   return (
     <h2
       ref={ref}
-      className="font-suse font-bold text-xl text-secondary tracking-wide"
+      className="font-suse font-bold text-xl text-sub tracking-wide"
     >
       {firstText.split("").map((letter, index) => (
         <motion.span
