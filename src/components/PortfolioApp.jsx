@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import Header from "./header/header";
+import Header from "./Header/Header";
 import Drawer from "./Drawer/Drawer";
 import TypingText from "./TypingText/TypingText";
 import Portfolio from "./sections/portfolio/Portfolio";
@@ -22,8 +22,6 @@ const PortfolioApp = () => {
             deliver an optimal user experience.
           </p>
         </div>
-        {/* <div className="w-1/2 md:w-auto md:h-50 order-2 mx-auto md:ml-auto rounded-lg relative"> */}
-        {/* <div className="absolute w-full h-full bg-slate-50 rounded-lg"></div> */}
         <motion.img
           whileHover={{
             rotate: "5deg",
@@ -31,9 +29,8 @@ const PortfolioApp = () => {
           }}
           src="photo.png"
           className="w-1/2 md:w-auto md:h-50 order-2 mx-auto md:ml-auto rounded-lg"
-          alt=""
+          alt="photo"
         />
-        {/* </div> */}
       </div>
       <h2
         className="flex flex-col md:w-[90%] lg:w-1/2 md:mx-auto  p-5 text-4xl font-semibold font-asimovian text-alternate"
