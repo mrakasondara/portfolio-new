@@ -1,27 +1,8 @@
 import { motion } from "motion/react";
 import PortfolioItem from "./PortfolioItem";
+import { portfolioItems as items } from "../../../data/portfolio";
 
 const Portfolio = () => {
-  const items = [
-    {
-      image: "/portfolio/tendaumkm.png",
-      title: "TendaUMKM",
-      desc: 'Website "UMKM Dukuhdalem" is a digital platform showcasing and promoting small and medium enterprises (UMKM) from the Dukuhdalem area.',
-      url: "https://umkm-dukuhdalem-b0d72.web.app/",
-    },
-    {
-      image: "/portfolio/papucraft.png",
-      title: "PapuCraft",
-      desc: "PapuCraft is a website that focuses on Papuan culture, covering various aspects such as arts, crafts, traditions and ancestral heritage.",
-      url: "https://papucraft-capstone.vercel.app/",
-    },
-    {
-      image: "/portfolio/titikgame.png",
-      title: "TitikGame",
-      desc: "Titik Game is a blog that discusses various aspects of the gaming world, including the latest game reviews, tips and tricks, and game guides.",
-      url: "https://blog-titikgame.vercel.app/",
-    },
-  ];
   const transition = {
     duration: 0.7,
     ease: "easeInOut",

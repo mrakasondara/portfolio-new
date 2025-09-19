@@ -65,13 +65,13 @@ const Footer = () => {
             <FaGithub />
           </motion.a>
         </div>
-        <p
+        <motion.p
           initial={animation.offScreen}
           whileInView={animation.onscreen}
           className="mt-[3rem] text-center md:text-right font-nsw font-semi opacity-75"
         >
           ©2025 All Rights Reserved.
-        </p>
+        </motion.p>
       </div>
     </motion.div>
   );

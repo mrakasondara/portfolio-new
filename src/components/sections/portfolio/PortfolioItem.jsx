@@ -1,6 +1,11 @@
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
-const PortfolioItem = ({ image, title, desc, url }) => {
+import { RiTailwindCssFill } from "react-icons/ri";
+import { FaReact } from "react-icons/fa";
+import { IoLogoFirebase } from "react-icons/io5";
+import { SiExpress, SiWebpack, SiMongodb } from "react-icons/si";
+
+const PortfolioItem = ({ image, title, desc, url, techStack }) => {
   const animation = {
     offScreen: {
       y: -50,
@@ -29,6 +34,13 @@ const PortfolioItem = ({ image, title, desc, url }) => {
       <div className="card-body">
         <h2 className="card-title ">{title}</h2>
         <p>{desc}</p>
+        <p className="text-[15px] font-semibold">Tech Stack</p>
+        <div className="flex gap-3 text-[20px]">
+          {techStack.map((tech) => {
+            const Icon = tech.component;
+            return <Icon key={tech.name} className={tech.className} />;
+          })}
+        </div>
         <div className="card-actions justify-end items-center">
           <Link
             to={url}
