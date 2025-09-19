@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import HideButton from "../ToggleButton/hideButton";
+import HideButton from "../ToggleButton/HideButton";
 import { UserContext } from "../../UserContext";
 import NavigationDrawer from "./NavigationDrawer/NavigationDrawer";
 
