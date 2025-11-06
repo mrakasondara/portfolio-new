@@ -24,7 +24,7 @@ const Footer = () => {
         <motion.h1
           initial={animation.offScreen}
           whileInView={animation.onscreen}
-          className="text-3xl font-bold text-alternate text-center md:text-start font-nsw mb-5"
+          className="text-xl md:text-3xl font-bold text-alternate text-center md:text-start font-nsw mb-5"
         >
           mrakasondara
         </motion.h1>
@@ -32,7 +32,7 @@ const Footer = () => {
           <motion.ul
             initial={animation.offScreen}
             whileInView={animation.onscreen}
-            className="flex gap-3 uppercase justify-center md:justify-start text-lg"
+            className="flex flex-col md:flex-row gap-3 uppercase justify-center items-center md:items-start md:justify-start text-lg"
           >
             <li>
               <a className="hover:underline" href="#Portfolio">
