@@ -1,11 +1,14 @@
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
-import { RiTailwindCssFill } from "react-icons/ri";
-import { FaReact } from "react-icons/fa";
-import { IoLogoFirebase } from "react-icons/io5";
-import { SiExpress, SiWebpack, SiMongodb } from "react-icons/si";
 
-const PortfolioItem = ({ image, title, desc, url, techStack }) => {
+const PortfolioItem = ({
+  image,
+  title,
+  desc,
+  githubUrl,
+  deployUrl,
+  techStack,
+}) => {
   const animation = {
     offScreen: {
       y: -50,
@@ -43,14 +46,14 @@ const PortfolioItem = ({ image, title, desc, url, techStack }) => {
         </div>
         <div className="card-actions justify-end items-center">
           <Link
-            to={url}
+            to={githubUrl}
             target="_blank"
             className="badge flex items-center text-sub p-2 bg-main hover:bg-sub rounded-md hover:cursor-pointer transition ease-in hover:text-main hover:border"
           >
             Repository
           </Link>
           <Link
-            to={url}
+            to={deployUrl}
             target="_blank"
             className="badge flex items-center text-sub p-2 bg-alternate hover:bg-sub border-alternate rounded-md hover:cursor-pointer transition ease-in hover:text-alternate hover:border"
           >
