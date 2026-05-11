@@ -41,7 +41,11 @@ const PortfolioItem = ({
         <div className="flex gap-3 text-[20px]">
           {techStack.map((tech) => {
             const Icon = tech.component;
-            return <Icon key={tech.name} className={tech.className} />;
+            return tech.component ? (
+              <Icon key={tech.name} className={tech.className} />
+            ) : (
+              <span className="text-sm text-blue-600">{tech.name}</span>
+            );
           })}
         </div>
         <div className="card-actions justify-end items-center">
