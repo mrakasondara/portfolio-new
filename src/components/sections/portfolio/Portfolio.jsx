@@ -8,8 +8,6 @@ const Portfolio = () => {
     ease: "easeInOut",
   };
 
-  console.log(items.reverse());
-
   return (
     <motion.div
       initial={{ y: 50, opacity: 0.1 }}

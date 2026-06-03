@@ -101,30 +101,6 @@ export const portfolioItems = [
     ],
   },
   {
-    image: "/portfolio/papucraft.png",
-    title: "PapuCraft",
-    desc: "PapuCraft is a website that focuses on Papuan culture, covering various aspects such as arts, crafts, traditions and ancestral heritage.",
-    githubUrl: "https://github.com/azharihsb-27/papucraft",
-    deployUrl: "https://papucraft-capstone.vercel.app/",
-    techStack: [
-      {
-        name: "tailwindcss",
-        component: RiTailwindCssFill,
-        className: "text-blue-500",
-      },
-      {
-        name: "firebase",
-        component: IoLogoFirebase,
-        className: "text-orange-500",
-      },
-      {
-        name: "webpack",
-        component: SiWebpack,
-        className: "text-blue-300",
-      },
-    ],
-  },
-  {
     image: "/portfolio/tendaumkm.png",
     title: "TendaUMKM",
     desc: 'Website "UMKM Dukuhdalem" is a digital platform showcasing and promoting small and medium enterprises (UMKM) from the Dukuhdalem area.',
