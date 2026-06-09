@@ -4,17 +4,17 @@ const Certificates = () => {
     {
       image: "/certificates/vsga.png",
       title: "Junior Web Developer",
-      url: "https://drive.google.com/file/d/1y_RSz-KYFXDf8CNbJ85AVN2eN8FnGWL0/view?usp=sharing",
+      url: "https://drive.google.com/file/d/1vZENsKIKZFD6_I4oucN-q2QDpmFkqVfn/view?usp=sharing",
     },
     {
       image: "/certificates/sib.png",
       title: "Best Graduation - SIB Dicoding Cycle 6",
-      url: "https://drive.google.com/file/d/1I4BzFZ_wLokWYLZpuj3ZPQFwOvwuo37U/view?usp=sharing",
+      url: "https://drive.google.com/file/d/1hnFO0c6EjyIXLxQKpBTFWc8Abv_jJ7Hq/view?usp=sharing",
     },
     {
       image: "/certificates/mentor-dbs.png",
       title: "Mentor - DBS Coding Camp 2025",
-      url: "https://drive.google.com/file/d/1y8VHqqaqgNM5Ief4nGpm2PnFPvAXyjU5/view?usp=sharing",
+      url: "https://drive.google.com/file/d/1X3XF79VABXp5NjEcwGCJvN5iksQJI3v6/view?usp=sharing",
     },
   ];
 
