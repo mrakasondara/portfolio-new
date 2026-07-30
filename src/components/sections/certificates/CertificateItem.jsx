@@ -35,6 +35,7 @@ const CertificateItem = ({ image, title, url }) => {
           src={image}
           className="thumb"
           alt={title}
+          loading="lazy"
         />
       </figure>
       <motion.div

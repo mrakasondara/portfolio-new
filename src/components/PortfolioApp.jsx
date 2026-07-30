@@ -17,9 +17,8 @@ const PortfolioApp = () => {
         <div className="flex flex-col md:w-3/4 justify-center">
           <TypingText />
           <p className="text-2xl text-justify md:text-left text-sub font-suse font-bold mt-2">
-            Fresh Graduate with an interest in Frontend Development. Focused on
-            building modern, interactive, and responsive web interfaces to
-            deliver an optimal user experience.
+            Full-Stack Web Developer specializing in craft modern,
+            interactive,and responsive user experiences.
           </p>
         </div>
         <motion.img

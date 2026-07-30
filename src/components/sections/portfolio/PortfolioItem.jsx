@@ -32,7 +32,7 @@ const PortfolioItem = ({
       className="card bg-sub w-full shadow-sm text-main font-suse"
     >
       <figure>
-        <img src={image} alt={title} />
+        <img src={image} alt={title} loading="lazy" />
       </figure>
       <div className="card-body">
         <h2 className="card-title ">{title}</h2>
